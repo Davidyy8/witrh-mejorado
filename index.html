@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planes con Amor 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+  <script src="firebaseConfig.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>💖 Nuestros Planes 💖</h1>
+  </header>
+
+  <main>
+    <section class="new-plan">
+      <input type="text" id="planText" placeholder="Escribe un nuevo plan..." />
+      <button id="addPlanBtn">Añadir Plan</button>
+    </section>
+
+    <section>
+      <h2>Planes Activos</h2>
+      <ul id="activePlans"></ul>
+    </section>
+
+    <section>
+      <h2>Planes Completados</h2>
+      <ul id="completedPlans"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💗 para mi amor</p>
+  </footer>
+</body>
+</html>
